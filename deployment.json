@@ -1,7 +1,7 @@
 {
-  "name" : "zend framework 3",
-  "display_name" : "Zend Framework 3",
-  "version" : "1.0.1",
+  "name" : "laminas",
+  "display_name" : "Laminas Project",
+  "version" : "1.0.0",
   "type": ["zray", "route"],
   "logo": "logo.jpg",
   "eula": "LICENSE.txt",

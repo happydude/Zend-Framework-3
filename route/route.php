@@ -1,6 +1,6 @@
 <?php
 
-class ZF3Plugin extends ZAppsPlugin {
+class LaminasPlugin extends ZAppsPlugin {
 	
 	public function resolveMVCEnter($context) {
 	}
@@ -32,5 +32,5 @@ class ZF3Plugin extends ZAppsPlugin {
 	private $resolved = false;
 }
 
-$zf3Plugin = new ZF3Plugin();
-$zf3Plugin->setWatchedFunction("Zend\Mvc\MvcEvent::setRouteMatch", array($zf3Plugin, "resolveMVCEnter"), array($zf3Plugin, "resolveMVCLeave"));
+$LaminasPlugin = new LaminasPlugin();
+$LaminasPlugin->setWatchedFunction("Laminas\Mvc\MvcEvent::setRouteMatch", array($LaminasPlugin, "resolveMVCEnter"), array($LaminasPlugin, "resolveMVCLeave"));
